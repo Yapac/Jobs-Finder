@@ -1,0 +1,58 @@
+
+#form{
+    border: 1px solid #968989;
+    border-radius: 1cm;
+    margin-top: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+#result{
+    border: 1px solid #968989;
+    border-radius: 1cm;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+.title{
+    font-size: 1.3rem;
+}
+#info{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    opacity: 0.5;
+}
+#info:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+footer{
+    background-color: #2c2c2c;
+}
+footer p{
+    margin-bottom: 0cm;
+    color: white;
+}
+@media screen and (max-width: 1080px)
+{
+    #result{
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    #form{
+
+        padding-left: 10px;
+        padding-right: 50px;
+
+    }
+}
