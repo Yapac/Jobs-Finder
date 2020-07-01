@@ -1,8 +1,12 @@
+<!--
+         Made by YapacDev(Yassine El atlassi)
+                    2020.07.01
+-->
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobs finder</title>
+    <title>Jobs</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,14 +15,14 @@
 </head>
 <body>
     <header style="background-color: #475FBC;" class="container-fluid text-center text-white p-3">
-            <h2><span class="spinner-grow"></span> JOBS FINDER <span class="spinner-grow"></span></h2>
+            <h2><span class="spinner-grow"></span> JOBS FINDER<span class="spinner-grow"></span></h2>
     </header>
 
     <section id="form" class="container">
 
         <img src="p/info.png" alt="info" id="info" data-toggle="modal" data-target="#modal-about">
         <h2 class="p-2 mb-4">FIND YOUR DREAM JOB WITH ONE CLICK!</h2>
-        <form action="">
+        <form action="#">
             <div class="form-group text-inline">
                 <label class="title" for="job">Job</label>
                 <input type="text" class="form-control" placeholder="job title, keywords,or company" id="job">
@@ -27,85 +31,30 @@
                 <label class="title" for="city">City</label>
                 <input type="text" class="form-control" placeholder="city or region" id="city">
             </div>
-            <button type="submit" style="width: 150px; border-radius:1cm ;" class="btn btn-primary p-2 my-3" id="submit">Submit</button>
+            <button type="submit" style="width: 150px; border-radius:1cm ;" class="btn btn-primary p-2 my-3"  id="submit" disabled>Submit</button>
+            <p class="text-danger" id="validation-text"></p>
         </form>       
     </section>
 
     <section id="result" class="container d-flex justify-content-around flex-wrap">
 
-        <div class="card my-3" style="width:400px">
-            <img class="card-img-top" src="p/job.jpg" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">Job title</h4>
-              <div class="card-text">
+        <!--
+        <div class='card my-3' style='width:400px'>
+            <img class='card-img-top' src='p/job.jpg' alt='Card image'>
+            <div class='card-body'>
+              <h4 class='card-title'>------</h4>
+              <div class='card-text'>
                   <ul>
-                      <li>Laboratoire d’analyses médicales sur marrakech recrute...</li>
-                      <li>Niveau d'études souhaité: Pas important</li>
+                      <li>--------</li>
+                      <li>------</li>
                       <li>Salaire: A discuter</li>
                   </ul>
               </div>
-              <a href="#" class="btn btn-info">See the offer</a>
+              <a href='----------' target="_blank" class='btn btn-info'>See the offer</a>
             </div>
         </div>
+        -->
 
-        <div class="card my-3" style="width:400px">
-            <img class="card-img-top" src="p/job.jpg" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">Job title</h4>
-              <div class="card-text">
-                  <ul>
-                      <li>Laboratoire d’analyses médicales sur marrakech recrute...</li>
-                      <li>Niveau d'études souhaité: Pas important</li>
-                      <li>Salaire: A discuter</li>
-                  </ul>
-              </div>
-              <a href="#" class="btn btn-info">See the offer</a>
-            </div>
-        </div>
-
-        <div class="card my-3" style="width:400px">
-            <img class="card-img-top" src="p/job.jpg" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">Job title</h4>
-              <div class="card-text">
-                  <ul>
-                      <li>Laboratoire d’analyses médicales sur marrakech recrute...</li>
-                      <li>Niveau d'études souhaité: Pas important</li>
-                      <li>Salaire: A discuter</li>
-                  </ul>
-              </div>
-              <a href="#" class="btn btn-info">See the offer</a>
-            </div>
-        </div>
-        <div class="card my-3" style="width:400px">
-            <img class="card-img-top" src="p/job.jpg" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">Job title</h4>
-              <div class="card-text">
-                  <ul>
-                      <li>Laboratoire d’analyses médicales sur marrakech recrute...</li>
-                      <li>Niveau d'études souhaité: Pas important</li>
-                      <li>Salaire: A discuter</li>
-                  </ul>
-              </div>
-              <a href="#" class="btn btn-info">See the offer</a>
-            </div>
-        </div>
-        
-        <div class="card my-3" style="width:400px">
-            <img class="card-img-top" src="p/job.jpg" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">Job title</h4>
-              <div class="card-text">
-                  <ul>
-                      <li>Laboratoire d’analyses médicales sur marrakech recrute...</li>
-                      <li>Niveau d'études souhaité: Pas important</li>
-                      <li>Salaire: A discuter</li>
-                  </ul>
-              </div>
-              <a href="#" class="btn btn-info">See the offer</a>
-            </div>
-        </div>
     </section>
 
     <footer class="container-fluid">
@@ -137,6 +86,7 @@
         </div>
     </div>
 
-
+    <!--Scripts-->
+    <script src="script.js"></script>
 </body>
 </html>
