@@ -22,6 +22,15 @@
 .title{
     font-size: 1.3rem;
 }
+
+
+#validation-text{
+    display: inline;
+    margin-left: 25px;
+}
+#waiting{
+    margin-bottom: 30px;
+}
 #info{
     height: 50px;
     width: 50px;
@@ -53,6 +62,5 @@ footer p{
 
         padding-left: 10px;
         padding-right: 50px;
-
     }
 }
